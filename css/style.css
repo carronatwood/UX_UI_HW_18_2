@@ -1,0 +1,49 @@
+.flexChild {
+    margin: 15px;
+    text-align: center;
+}
+h1{
+    font-family: "Lato";
+    text-align: center;
+}
+p{
+    font-family: "Cormorant Garamond";
+}
+h4{
+    font-family: "Lato";
+}
+h3{
+    font-family: "Lato";
+}
+.workGrid {
+    display: grid;
+}
+.gridChild {
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    flex-direction: row;
+    grid-template-rows: 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "hairGoals NEMAA"
+}
+.flexContainer {
+    display: flex;
+}
+@media only screen and (max-width: 600px) { 
+    .workGrid {
+        display: grid;
+    }
+    .gridChild {
+        margin: 10px;
+        text-align: center;
+        display: inline-block;
+        flex-direction: row;
+        grid-template-rows: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "hairGoals" 
+        "NEMAA"
+    }
+}
